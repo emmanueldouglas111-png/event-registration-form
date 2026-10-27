@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>Event Registration Form</h1>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="name">
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" id="age">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="Male">
+                        male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        female
+                    </label>
+                </div>
+            </div>
+]
+            <div class="form-group">
+                <label>Event Category</label>
+
+                <select id="category">
+                    <option value="">Select Category</option>
+                    <option>Web Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Cybersecurity</option>
+                    <option>AI Automation</option>
+                    <option>Data Science</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Attendance Type</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="attendance" value="Physical">
+                        Physical
+                    </label>
+
+                    <label>
+                        <input type="radio" name="attendance" value="Virtual">
+                        Virtual
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Interests</label>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="Networking"> Networking</label>
+                    <label><input type="checkbox" value="Workshops"> Workshops</label>
+                    <label><input type="checkbox" value="Coding Challenge"> Coding Challenge</label>
+                    <label><input type="checkbox" value="Career Fair"> Career Fair</label>
+                    <label><input type="checkbox" value="Startup Pitch"> Startup Pitch</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Short Bio</label>
+                <textarea id="bio" rows="5"></textarea>
+            </div>
+
+            <p id="message"></p>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
